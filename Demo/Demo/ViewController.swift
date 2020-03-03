@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	@IBOutlet weak var lbl: UILabel!
+	@IBOutlet weak var t1: UITextField!
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +23,8 @@ class ViewController: UIViewController {
 	}
 
 
+	@IBAction func show(_ sender: Any) {
+		lbl.text=t1.text!
+	}
 }
 
